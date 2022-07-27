@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Total Amount: <input type="number" id="myshare"> <br> <br>
+    <button ondblclick="let TotalAmount=document.getElementById('myshare').value;
+    let wifeShare=TotalAmount/8;
+    let sonShare=TotalAmount-wifeShare;
+    let fullstatement='The total amount is '+TotalAmount +' The share of wife is '+wifeShare+ 'The share of son is '+sonShare;
+    document.getElementById('heading').innerText=fullstatement;
+    
+    "> Calculat share
+
+    </button>
+    <h1 id="heading"></h1>
+</body>
+</html>
